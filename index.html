@@ -2,32 +2,67 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Mi Bartender, tu recetario personal de cocktails.">
-  <title>Mi Bartender | Edadig Apps</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="My Bartender: encontrá qué cocktail preparar, compartí recetas y mantené tu lista de compras siempre a mano.">
+  <title>My Bartender | Tu barra, sin límites</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="brand">EDADIG APPS</p>
-          <h1>Mi Bartender</h1>
-          <p class="lead">Tu recetario personal de cocktails, simple y siempre a mano.</p>
-          <nav><a href="#es">ES</a><span>·</span><a href="#en">EN</a></nav>
-        </div>
-        <div class="hero-logo">
-          <img class="site-logo" src="assets/mi_bartender_logo.png" alt="Mi Bartender">
-        </div>
+<header class="topbar">
+  <a class="mini-brand" href="#top"><img src="assets/logo.webp" alt="My Bartender"><span>My Bartender</span></a>
+  <div class="lang" role="group" aria-label="Idioma"><button class="active" data-lang="es">ES</button><button data-lang="en">EN</button></div>
+</header>
+<main id="top">
+  <section class="hero wrap">
+    <p class="eyebrow">EDADIG APPS</p>
+    <h1>My Bartender</h1>
+    <p class="hero-line" data-i18n="hero">Tu recetario personal de cocktails. <strong>Elegí, prepará y compartí.</strong></p>
+    <img class="flow" src="assets/flow.webp" alt="My Bartender: creá, encontrá, descubrí y compartí cocktails">
+  </section>
+
+  <section class="pillar wrap">
+    <div class="pillar-copy"><span>01</span><h2 data-i18n="findTitle">¿Qué tenés ganas de tomar?</h2><p data-i18n="findText">Elegí ingredientes, sabores y preferencias. My Bartender encuentra opciones para vos.</p></div>
+    <div class="duo"><img src="assets/play-encontrar.webp" alt="Búsqueda de cocktails"><img src="assets/play-sugerencias.webp" alt="Cocktails sugeridos"></div>
+  </section>
+
+  <section class="qr-band">
+    <div class="wrap"><div class="pillar-copy"><span>02</span><h2 data-i18n="shareTitle">Compartí recetas en segundos</h2><p data-i18n="shareText">Mostrá el QR. Escanealo desde otro celular. La receta queda lista para preparar.</p></div><img class="qr-feature" src="assets/qr-feature.webp" alt="Escaneá un QR y obtené la receta en My Bartender"></div>
+  </section>
+
+  <section class="pillar wrap">
+    <div class="pillar-copy"><span>03</span><h2 data-i18n="buyTitle">No te olvides de reponer</h2><p data-i18n="buyText">Marcá qué tenés, qué falta y qué querés comprar. Tu lista, siempre a mano.</p></div>
+    <div class="duo"><img src="assets/play-barra.webp" alt="Control de ingredientes de tu barra"><img src="assets/play-comprar.webp" alt="Lista de compras"></div>
+  </section>
+
+  <section class="more wrap">
+    <p class="eyebrow" data-i18n="moreEyebrow">Y hay más</p>
+    <h2 data-i18n="moreTitle">Todo para disfrutar tu cocktail</h2>
+    <div class="carousel" aria-label="Funciones de My Bartender">
+      <button class="arrow prev" aria-label="Anterior">‹</button>
+      <div class="track">
+        <img src="assets/play-inicio.webp" alt="Inicio de My Bartender">
+        <img src="assets/play-compartir.webp" alt="Compartir una receta">
+        <img src="assets/play-qr.webp" alt="Código QR de una receta">
+        <img src="assets/play-receta.webp" alt="Detalle de una receta">
+        <img src="assets/play-historia.webp" alt="Historia de un cocktail">
       </div>
+      <button class="arrow next" aria-label="Siguiente">›</button>
     </div>
-  </header>
-  <main class="wrap">
-    <section id="es"><h2>Todo tu recetario en un solo lugar</h2><p>Mi Bartender es una aplicación para Android que te permite organizar, consultar, crear y compartir recetas de cocktails.</p><div class="cards"><article><h3>Recetas</h3><p>Consultá cocktails, ingredientes, cantidades y pasos de preparación.</p></article><article><h3>Tu colección</h3><p>Creá y personalizá recetas para construir tu propio recetario.</p></article><article><h3>Compartir</h3><p>Compartí recetas mediante las funciones disponibles en la aplicación.</p></article><article><h3>Respaldo opcional</h3><p>Si conectás voluntariamente tu cuenta de Google, podés utilizar las funciones de backup y restauración de Mi Bartender.</p></article></div><h2>Soporte</h2><p>Consultas: <a href="mailto:mibartender.app@gmail.com">mibartender.app@gmail.com</a></p></section>
-    <hr>
-    <section id="en" lang="en"><h2>Your cocktail recipe book in one place</h2><p>Mi Bartender is an Android application for organizing, browsing, creating and sharing cocktail recipes.</p><div class="cards"><article><h3>Recipes</h3><p>Browse cocktails, ingredients, quantities and preparation steps.</p></article><article><h3>Your collection</h3><p>Create and customize recipes to build your personal recipe book.</p></article><article><h3>Sharing</h3><p>Share recipes using the features available in the application.</p></article><article><h3>Optional backup</h3><p>If you voluntarily connect your Google account, you can use Mi Bartender's backup and restore features.</p></article></div><h2>Support</h2><p>Questions: <a href="mailto:mibartender.app@gmail.com">mibartender.app@gmail.com</a></p></section>
-  </main>
-  <footer><div class="wrap"><strong>Mi Bartender</strong> · Edadig Apps<br><a href="privacy.html">Política de Privacidad / Privacy Policy</a> · <a href="terms.html">Términos / Terms</a></div></footer>
-</body>
-</html>
+  </section>
+
+  <section class="cocktails wrap">
+    <h2 data-i18n="cocktailsTitle">Tu barra. A tu manera.</h2>
+    <div class="cocktail-strip"><img src="assets/cocktail-bloody-mary.webp" alt="Bloody Mary"><img src="assets/cocktail-caipirinha.webp" alt="Caipirinha"><img src="assets/cocktail-cosmopolitan.webp" alt="Cosmopolitan"><img src="assets/cocktail-pina-colada.webp" alt="Piña Colada"></div>
+  </section>
+
+  <section class="quick wrap">
+    <div><strong data-i18n="localTitle">Tus recetas bajo tu control</strong><small data-i18n="localText">Usala sin cuenta si querés.</small></div>
+    <div><strong data-i18n="backupTitle">Backup opcional</strong><small data-i18n="backupText">Con Google Drive.</small></div>
+    <div><strong>18+</strong><small data-i18n="ageText">Solo para mayores de 18 años.</small></div>
+  </section>
+
+  <section class="support wrap"><h2 data-i18n="supportTitle">¿Necesitás ayuda?</h2><a href="mailto:mibartender.app@gmail.com">mibartender.app@gmail.com</a></section>
+</main>
+<footer><div class="wrap"><strong>My Bartender</strong> · Edadig Apps <span>·</span> <a href="privacy.html" data-i18n="privacy">Privacidad</a> <span>·</span> <a href="terms.html" data-i18n="terms">Términos</a></div></footer>
+<script src="site.js"></script>
+</body></html>
